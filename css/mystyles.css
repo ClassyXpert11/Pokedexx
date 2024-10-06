@@ -1,0 +1,393 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #252525;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #c33a3a;
+  padding: 10px;
+}
+
+.header img {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 30px 25em;
+}
+
+.input-group {
+  width: 40%;
+  display: flex;
+  font-size: 1.2.em;
+  margin: 0px auto 20px auto;
+  background-color: #c33a3a;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  border-width: 0 2px 2px 2px;
+}
+
+.input-group label,
+.input-group input[type="text"],
+.input-group input[type="button"] {
+  font-size: 1.2em;
+}
+
+.input-group label {
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+.input-group input[type="text"] {
+  background-color: #b1bbff;
+  flex: 1 1;
+}
+
+.input-group input[type="button"] {
+  background-color: #252525;
+  color: white;
+  padding: 0 40px;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #252525;
+}
+
+.input-group input[type="button"]:hover {
+  background-color: #5fbd50;
+  transition: ease-in-out 0.3s;
+  color: black;
+  border: 2px solid black;
+}
+
+.container {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  background-color: white;
+  box-shadow: 6px 6px 4px #c33a3a;
+  margin-bottom: 35px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.main-image {
+  position: absolute;
+  right: -50px;
+  bottom: -10px;
+  padding: 0;
+  width: 150px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: white;
+  box-shadow: 6px 6px 4px #c33a3a;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+/* to display #id number on the right side */
+#id {
+  float: right;
+  margin: 0 119px 0 0;
+}
+
+/* info box contains the height, weight and stats */
+.info-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 50px;
+}
+
+/* the height, weight and ability container */
+.hwa-container {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* this is showing the whole pokemon from front to back
+with the shiny variations too. Needed to be in a different 
+div container to make it look neater. */
+.more-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* this is for the pokemon abilites  */
+.ability-list {
+  display: inline-flex;
+  padding: 4px;
+  margin: 3px 0px;
+  background-color: #a9a9a9;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.ability-list:hover {
+  background-color: #a5a5a5;
+  border: 2px solid #c33a3a;
+  color: #fff;
+  cursor: default;
+}
+
+/* below is just the styling for all the pokemon types */
+#types {
+  padding: 4px;
+  margin: 0 5px;
+}
+
+.type {
+  border: 3px solid black;
+  border-radius: 6px;
+  padding: 4px;
+  color: #000;
+  display: inline-flex;
+  margin: 0px 5px;
+}
+
+/* this gets rid of some extra margin for the first "type" div */
+#types:first-child {
+  margin-left: 0px;
+}
+
+/* bug type */
+#types .bug {
+  background-color: #b3c22b;
+  border-color: #808b1f;
+}
+
+#types .bug:hover {
+  background-color: #808b1f;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* normal type */
+#types .normal {
+  background-color: #c0c2b0;
+  border-color: #8e8f82;
+}
+
+#types .normal:hover {
+  background-color: #8e8f82;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* poison type */
+#types .poison {
+  background-color: #b429a9;
+  border-color: #7a1c72;
+}
+
+#types .poison:hover {
+  background-color: #7a1c72;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* psychic type */
+#types .psychic {
+  background-color: #f349b2;
+  border-color: #b83987;
+}
+
+#types .psychic:hover {
+  background-color: #b83987;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* grass type */
+#types .grass {
+  background-color: #20e337;
+  border-color: #17a728;
+}
+
+#types .grass:hover {
+  background-color: #17a728;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* ground type */
+#types .ground {
+  background-color: #d6c22b;
+  border-color: #9a8c1f;
+}
+
+#types .ground:hover {
+  background-color: #9a8c1f;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* ice type */
+#types .ice {
+  background-color: #2fd0e2;
+  border-color: #249ba8;
+}
+
+#types .ice:hover {
+  background-color: #249ba8;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* fire type */
+#types .fire {
+  background-color: #ff0000;
+  border-color: #910000;
+}
+
+#types .fire:hover {
+  background-color: #910000;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* rock type */
+#types .rock {
+  background-color: #c3c66b;
+  border-color: #7b7d44;
+}
+
+#types .rock:hover {
+  background-color: #7b7d44;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* dragon type */
+#types .dragon {
+  background-color: #6422f1;
+  border-color: #4317a1;
+}
+
+#types .dragon:hover {
+  background-color: #4317a1;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* water type */
+#types .water {
+  background-color: #4195de;
+  border-color: #2d6698;
+}
+
+#types .water:hover {
+  background-color: #2d6698;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* dark type */
+#types .dark {
+  background-color: #563914;
+  border-color: #2f1f0b;
+}
+
+#types .dark:hover {
+  background-color: #2f1f0b;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* fighting type */
+#types .fighting {
+  background-color: #d75b1d;
+  border-color: #9a4216;
+}
+
+#types .fighting:hover {
+  background-color: #9a4216;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* ghost type */
+#types .ghost {
+  background-color: #b05bf5;
+  border-color: #773ea5;
+}
+
+#types .ghost:hover {
+  background-color: #773ea5;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* steel type */
+#types .steel {
+  background-color: #b7b7b7;
+  border-color: #797979;
+}
+
+#types .steel:hover {
+  background-color: #797979;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* flying type */
+#types .flying {
+  background-color: #7bacff;
+  border-color: #577ab6;
+}
+
+#types .flying:hover {
+  background-color: #577ab6;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* electric type */
+#types .electric {
+  background-color: #f6ff00;
+  border-color: #bcc200;
+}
+
+#types .electric:hover {
+  background-color: #bcc200;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}
+
+/* fairy type */
+#types .fairy {
+  background-color: #ff97ef;
+  border-color: #b56baa;
+}
+
+#types .fairy:hover {
+  background-color: #b56baa;
+  border-color: #000;
+  color: white;
+  cursor: default;
+}

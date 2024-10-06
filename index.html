@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/ultraball.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <title>Abdullah's Pokedex</title>
+</head>
+<body>
+    <div class="header">
+        <img src="images/pokemon.png" alt="Pokemon">
+    </div>
+    <div class="input-group">
+        <label for="search">Pokemon Search</label>
+        <input type="text" id="search" placeholder="Name or #ID">
+        <input type="button" id="btnSearch" value="Search"> 
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <span id="id">#ID </span>
+            </div>
+            <div id="name">Name</div>
+            <!-- When the pokedex is showing and you hover over it, it will say pokedex.
+                When the pokemon is showing it will say pokemon -->
+            <div class="main-image" title="Pokemon"><img src="images/pokedex.png" title="Pokedex"></div>
+            <div class="types" id="types">Pokemon types</div>
+        </div>
+        <div class="info-box">
+            <div class="row stats">
+                <div id="stats">Stats</div>
+            </div>
+            <div class="hwa-container">
+                <div class="row hw">
+                    <span id="height">Height</span>
+                    <span id="weight">Weight</span>
+                </div>
+                <div class="row">
+                    <span id="ability">Ability</span>
+                </div>
+            </div>
+        </div>
+        <div class="row more-images">
+            <!-- title is used here to tell you what image shows what when hovering over it.
+                It will not say anything if there is no image showing though which is a good thing-->
+            <div class="front-default" title="Front"></div>
+            <div class="back-default" title="Back"></div>
+            <div class="front-shiny" title="Front shiny"></div>
+            <div class="back-shiny" title="Back shiny"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- to do list!!!
+    1.  comment code -->
+
+    <script src="scripts/api.js"></script>
+</body>
+</html>
